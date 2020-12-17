@@ -1,0 +1,58 @@
+{
+	"name": "cipher2",
+	"version": "0.1.1",
+	"description": "Application to edit encrypted documents",
+	"keywords": [],
+	"license": "GPL-v3",
+	"author": "Luis Augusto",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make",
+		"make-mac": "npx @electron-forge/cli make --platform darwin"
+	},
+	"config": {
+		"forge": {
+			"packagerConfig": {
+				"icon": "./assets/cipher2-icon"
+			},
+			"makers": [
+				{
+					"name": "@electron-forge/maker-squirrel",
+					"config": {
+						"name": "cipher2"
+					}
+				},
+				{
+					"name": "@electron-forge/maker-zip",
+					"platforms": [
+						"darwin"
+					]
+				},
+				{
+					"name": "@electron-forge/maker-deb",
+					"config": {
+						"icon": "./assets/cipher2-icon.png"
+					}
+				},
+				{
+					"name": "@electron-forge/maker-rpm",
+					"config": {}
+				}
+			]
+		}
+	},
+	"dependencies": {
+		"electron-squirrel-startup": "^1.0.0"
+	},
+	"devDependencies": {
+		"@electron-forge/cli": "^6.0.0-beta.54",
+		"@electron-forge/maker-deb": "^6.0.0-beta.54",
+		"@electron-forge/maker-rpm": "^6.0.0-beta.54",
+		"@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+		"@electron-forge/maker-zip": "^6.0.0-beta.54",
+		"electron": "^11.1.0"
+	}
+}
