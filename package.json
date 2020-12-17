@@ -3,7 +3,7 @@
 	"version": "0.1.1",
 	"description": "Application to edit encrypted documents",
 	"keywords": [],
-	"license": "GPL-v3",
+	"license": "GPLV3",
 	"author": "Luis Augusto",
 	"main": "main.js",
 	"scripts": {
