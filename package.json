@@ -3,9 +3,13 @@
 	"version": "0.1.1",
 	"description": "Application to edit encrypted documents",
 	"keywords": [],
-	"license": "GPLV3",
+	"license": "GPL-3.0-or-later",
 	"author": "Luis Augusto",
 	"main": "main.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lpenap/cipher2"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "electron-forge start",
@@ -45,7 +49,8 @@
 		}
 	},
 	"dependencies": {
-		"electron-squirrel-startup": "^1.0.0"
+		"electron-squirrel-startup": "^1.0.0",
+		"nedb": "^1.8.0"
 	},
 	"devDependencies": {
 		"@electron-forge/cli": "^6.0.0-beta.54",
