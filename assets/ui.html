@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hello World!</title>
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+	<link rel="stylesheet" href="../node_modules/electron-tabs/electron-tabs.css">
+	<link rel="stylesheet" href="ui.css">
+</head>
+
+<body style="background: white;">
+	<div class="etabs-tabgroup">
+		<div class="etabs-tabs"></div>
+		<div class="etabs-buttons"></div>
+	</div>
+	<div class="etabs-views"></div>
+	<!--
+	<h1>Hello World!</h1>
+	<p>
+		We are using node <script>
+			document.write(process.versions.node)
+		</script>,
+		Chrome <script>
+			document.write(process.versions.chrome)
+		</script>,
+		and Electron <script>
+			document.write(process.versions.electron)
+		</script>.
+	</p>
+-->
+	<!-- Renderer Process -->
+	<script src="../lib/renderer.js"></script>
+</body>
+
+</html>
